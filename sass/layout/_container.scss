@@ -2,7 +2,7 @@
     @include box(100%, 0rem);
     
     #greeting {
-        @include box(75%, 0.5rem);
+        @include box(75%, 0rem);
         transition: color, 0.5s;
         
         h1 {
@@ -26,6 +26,7 @@
         .invitation-img {
             width: 20%;
             align-self: center;
+            text-align: center;
             
             img {
                 width: 100%;
@@ -33,7 +34,7 @@
         }
         
         #invitation-text {
-            width: 60%;
+            width: 70%;
             font-size: $font-l;
         }
         
@@ -46,18 +47,24 @@
 
         #helper-text {
             color: $dark-grey;
+            font-size: $font-l;
         }
         
         #helper-guides {
             display: flex;
             justify-content: center;
-            
-            letter-spacing: 0.1rem;
+            letter-spacing: 0.12rem;
             
             .helper-guide {
                 display: flex;
-                justify-content: center;
+                flex-direction: column;
                 transition: color, 0.5s;
+                
+                .icon {
+                    text-align: center;
+                    width: 5rem;
+                    height: 5rem;
+                }
                 
                 a {
                     cursor: pointer;
@@ -77,5 +84,11 @@
         }
 
         transition: color, 0.5s;
+    }
+    
+    #navigation {
+        p {
+            word-spacing: -0.25rem;
+        }
     }
 }

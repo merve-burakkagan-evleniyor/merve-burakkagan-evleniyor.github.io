@@ -70,7 +70,7 @@ ul {
   #container #greeting {
     margin: auto;
     width: 75%;
-    padding: 0.5rem;
+    padding: 0rem;
     transition: color, 0.5s; }
     #container #greeting h1 {
       font-size: 1.75rem; }
@@ -84,26 +84,32 @@ ul {
     transition: color, 0.5s; }
     #container #invitation .invitation-img {
       width: 20%;
-      align-self: center; }
+      align-self: center;
+      text-align: center; }
       #container #invitation .invitation-img img {
         width: 100%; }
     #container #invitation #invitation-text {
-      width: 60%;
+      width: 70%;
       font-size: 1.25rem; }
     #container #invitation:hover {
       color: #424642; }
   #container #helpers {
     transition: color, 0.5s; }
     #container #helpers #helper-text {
-      color: #536162; }
+      color: #536162;
+      font-size: 1.25rem; }
     #container #helpers #helper-guides {
       display: flex;
       justify-content: center;
-      letter-spacing: 0.1rem; }
+      letter-spacing: 0.12rem; }
       #container #helpers #helper-guides .helper-guide {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         transition: color, 0.5s; }
+        #container #helpers #helper-guides .helper-guide .icon {
+          text-align: center;
+          width: 5rem;
+          height: 5rem; }
         #container #helpers #helper-guides .helper-guide a {
           cursor: pointer;
           text-decoration: none;
@@ -113,5 +119,7 @@ ul {
             transform: scale(1.2); }
         #container #helpers #helper-guides .helper-guide:hover {
           color: #424642; }
+  #container #navigation p {
+    word-spacing: -0.25rem; }
 
 /*# sourceMappingURL=style.css.map */
