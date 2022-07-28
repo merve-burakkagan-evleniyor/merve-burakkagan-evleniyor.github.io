@@ -1,0 +1,84 @@
+* {
+    cursor: default;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+    @media screen and (max-width: 9999px) {
+        font-size: 26px;
+        
+        #greeting-logo {
+            width: 75%;
+            img {
+                width: 25%;
+                margin-right: 0.5rem;
+            }
+        }
+        
+        #invitation {
+            @include box(60%, 0.5rem);
+        }
+        
+        #helpers {
+            @include box(60%, 0.5rem);
+        }
+    }
+    
+    @media screen and (max-width: 1650px) {
+        font-size: 24px;
+    }
+    
+    @media screen and (max-width: 1450px) {
+        font-size: 22px;
+    }
+    
+    @media screen and (max-width: 1080px) {
+        font-size: 20px;
+    }
+    
+    @media screen and (max-width: 900px) {
+        font-size: 18px;
+        
+        #greeting-logo {
+            width: 50%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        font-size: 16px;
+        
+        #invitation {
+            width: 90%;
+        }
+        
+        #helpers {
+            width: 100%;
+        }
+    }
+    
+    @media screen and (max-width: 667px) {
+        font-size: 14px;
+    }
+}
+
+body {
+    background-color: $white;
+    color: $dark-grey;
+    font-size: $font-m;
+    font-family: 'Shadows Into Light Two', cursive;
+    letter-spacing: 0.2rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0rem;
+}

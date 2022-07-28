@@ -1,0 +1,81 @@
+#container {
+    @include box(100%, 0rem);
+    
+    #greeting {
+        @include box(75%, 0.5rem);
+        transition: color, 0.5s;
+        
+        h1 {
+            font-size: $font-xl;
+        }
+        
+        &:hover {
+            color: $black;
+        }
+    }
+    
+    hr {
+        border-color: $black;
+    }
+    
+    #invitation {
+        display: flex;
+        justify-content: space-between;
+        transition: color, 0.5s;
+        
+        .invitation-img {
+            width: 20%;
+            align-self: center;
+            
+            img {
+                width: 100%;
+            }
+        }
+        
+        #invitation-text {
+            width: 60%;
+            font-size: $font-l;
+        }
+        
+        &:hover {
+            color: $black;
+        }
+    }
+    
+    #helpers {
+
+        #helper-text {
+            color: $dark-grey;
+        }
+        
+        #helper-guides {
+            display: flex;
+            justify-content: center;
+            
+            letter-spacing: 0.1rem;
+            
+            .helper-guide {
+                display: flex;
+                justify-content: center;
+                transition: color, 0.5s;
+                
+                a {
+                    cursor: pointer;
+                    text-decoration: none;
+                    color: $black;
+                    
+                    &:hover {
+                        color: $orange;
+                        transform: scale(1.2);
+                    }
+                }
+                
+                &:hover {
+                    color: $black;
+                }
+            }
+        }
+
+        transition: color, 0.5s;
+    }
+}
