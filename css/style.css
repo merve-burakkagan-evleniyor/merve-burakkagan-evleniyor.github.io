@@ -121,5 +121,12 @@ ul {
           color: #424642; }
   #container #navigation p {
     word-spacing: -0.25rem; }
+    #container #navigation p a {
+      cursor: pointer;
+      text-decoration: none;
+      color: #424642; }
+      #container #navigation p a:hover {
+        color: #C06014;
+        transform: scale(1.2); }
 
 /*# sourceMappingURL=style.css.map */

@@ -89,6 +89,17 @@
     #navigation {
         p {
             word-spacing: -0.25rem;
+            
+            a {
+                    cursor: pointer;
+                    text-decoration: none;
+                    color: $black;
+                    
+                    &:hover {
+                        color: $orange;
+                        transform: scale(1.2);
+                    }
+                }
         }
     }
 }
