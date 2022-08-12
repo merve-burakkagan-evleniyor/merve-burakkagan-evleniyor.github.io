@@ -1,5 +1,5 @@
 // Event date to count down from
-var eventTime = new Date("Sep 11, 2022, 19:30:00").getTime();
+var eventTime = new Date("Sep 11, 2022, 19:00:00").getTime();
 
 // Counting down
 var x = setInterval(function() {
